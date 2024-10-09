@@ -1,0 +1,18 @@
+main .title {
+    text-shadow: 0 0 0.125em rgb(192 38 211 / 0.5), 0 0 0.45em currentColor;
+  }
+  /* Vice City Text */
+  main .cursive {
+    font-family: 'Satisfy', cursive;
+    text-shadow: 0 0 0.125em rgb(192 38 211 / 0.5), 0 0 0.45em currentColor;
+  }
+  /* Reflection Color */
+  main #main_container::before {
+    content: "";
+    width:100%;
+    height:100%;
+    top:120%;
+    left:0;
+    position:absolute;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  }
